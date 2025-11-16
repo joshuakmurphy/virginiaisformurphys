@@ -1,4 +1,13 @@
-const ProfilePage = ({ member, allMembers, onBack, onMemberClick }) => {
+import { FamilyMember } from '../types';
+
+interface ProfilePageProps {
+  member: FamilyMember;
+  allMembers: FamilyMember[];
+  onBack: () => void;
+  onMemberClick: (member: FamilyMember) => void;
+}
+
+const ProfilePage: React.FC<ProfilePageProps> = ({ member, allMembers, onBack, onMemberClick }) => {
   return (
     <div style={{
       padding: '40px',

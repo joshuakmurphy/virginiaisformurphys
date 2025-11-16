@@ -1,4 +1,11 @@
-const FamilyMemberCard = ({ member, onClick }) => {
+import { FamilyMember } from '../types';
+
+interface FamilyMemberCardProps {
+  member: FamilyMember;
+  onClick: (member: FamilyMember) => void;
+}
+
+const FamilyMemberCard: React.FC<FamilyMemberCardProps> = ({ member, onClick }) => {
   return (
     <div
       onClick={() => onClick(member)}

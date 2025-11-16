@@ -1,7 +1,13 @@
+import { FamilyMember } from '../types';
 import Header from './Header';
 import FamilyMemberCard from './FamilyMemberCard';
 
-const HomePage = ({ familyMembers, onMemberClick }) => {
+interface HomePageProps {
+  familyMembers: FamilyMember[];
+  onMemberClick: (member: FamilyMember) => void;
+}
+
+const HomePage: React.FC<HomePageProps> = ({ familyMembers, onMemberClick }) => {
   return (
     <>
       <Header />

@@ -1,4 +1,11 @@
-const Snowflake = ({ size, top, left, delay }) => (
+interface SnowflakeProps {
+  size: string;
+  top: string;
+  left: string;
+  delay: number;
+}
+
+const Snowflake: React.FC<SnowflakeProps> = ({ size, top, left, delay }) => (
   <div style={{
     position: 'absolute',
     top: top,

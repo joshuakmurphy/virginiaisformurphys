@@ -1,4 +1,4 @@
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <div style={{
       padding: '80px 40px 60px',

@@ -1,4 +1,4 @@
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer style={{
       background: 'linear-gradient(135deg, #2C5F7C 0%, #1E3A4F 100%)',
