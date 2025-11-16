@@ -13,29 +13,29 @@ const WinterWonderlandCard = () => {
       emoji: '👨',
       color: '#4A90E2',
       highlights: [
-        'Selected as Claude Code Champion for Capital One\'s AI rollout',
-        'Team won internal hackathon that became an official product',
-        'Completed Andrew Ng\'s Machine Learning Specialization',
-        'Launched development of "Passage" - a mental health app',
-        'Celebrated 12 years of recovery work'
+        'Enjoyed professional growth and new opportunities',
+        'Worked on exciting technology projects',
+        'Continued learning and development',
+        'Created memorable experiences with family',
+        'Focused on work-life balance and personal wellness'
       ],
-      story: 'In a year marked by professional achievements and personal growth, Josh has emerged as a key figure in Capital One\'s enterprise AI initiative. As a newly appointed Claude Code Champion, he\'s leading the charge in bringing cutting-edge AI tools to the organization while continuing his journey of integration and authenticity.',
-      quote: 'Integration over compartmentalization.'
+      story: 'A year of growth and balance, Josh has focused on being present for his family while pursuing meaningful work. Whether it\'s helping with homework or working on new projects, he\'s found joy in both the big moments and the everyday.',
+      quote: 'Making every moment count.'
     },
     {
       id: 'amy',
       name: 'Amy',
       fullName: 'Amy Murphy',
-      title: 'The Heart of the Home',
+      title: 'Mom',
       emoji: '👩',
       color: '#9B59B6',
       highlights: [
-        'Orchestrated beautiful family celebrations throughout the year',
-        'Supported all family members through milestones',
-        'Created a warm and loving home environment',
-        'Managed family schedules with grace and humor'
+        'Organized wonderful family celebrations',
+        'Supported everyone through life\'s ups and downs',
+        'Created a warm and welcoming home',
+        'Balanced work and family with grace'
       ],
-      story: 'The glue that holds the Murphy family together, Amy has made 2025 a year of memorable moments and meaningful connections.',
+      story: 'The heart of the Murphy family, Amy has made 2025 a year filled with love, laughter, and togetherness. Her warmth and dedication make every day special.',
       quote: 'Family is everything.'
     },
     {
@@ -46,12 +46,12 @@ const WinterWonderlandCard = () => {
       emoji: '👧',
       color: '#E91E63',
       highlights: [
-        'Celebrated confirmation - a major spiritual milestone',
-        'Excelled in school and extracurricular activities',
-        'Showed leadership and maturity beyond her years',
-        'Made lasting memories with family and friends'
+        'Excelled in school and activities',
+        'Developed new interests and hobbies',
+        'Showed maturity and leadership',
+        'Made wonderful memories with friends'
       ],
-      story: 'At 15, Abby has blossomed into a thoughtful, accomplished young woman. Her confirmation this year marked a significant spiritual journey and commitment.',
+      story: 'At 15, Abby continues to impress with her dedication and kindness. This year brought new adventures, achievements, and growth.',
       quote: 'Growing stronger every day.'
     },
     {
@@ -62,28 +62,28 @@ const WinterWonderlandCard = () => {
       emoji: '👧',
       color: '#20B2AA',
       highlights: [
-        'Created countless works of art and imagination',
-        'Brought joy and laughter to every family gathering',
-        'Showed kindness and creativity in everything she does',
-        'Made new friends and tried new activities'
+        'Explored creativity through art and play',
+        'Brought joy and laughter to every day',
+        'Made new friends and discoveries',
+        'Showed kindness and imagination'
       ],
-      story: 'Serena\'s creativity and energy light up every room she enters. From her adorable diner drawings to her infectious enthusiasm, she makes every day brighter.',
-      quote: 'Always creating, always smiling.'
+      story: 'Serena\'s creativity and energy make every day an adventure. Her imagination knows no bounds, and her smile lights up the room.',
+      quote: 'Always creating, always exploring.'
     },
     {
       id: 'willow',
       name: 'Willow',
-      fullName: 'Willow Murphy',
-      title: 'Newest Family Member',
+      fullName: 'Willow',
+      title: 'Family Dog',
       emoji: '🐕',
       color: '#8D6E63',
       highlights: [
-        'Joined the Murphy family and stole everyone\'s hearts',
-        'Mastered basic training commands',
-        'Brought endless energy and puppy kisses',
-        'Made the house feel even more like home'
+        'Brought endless joy to the family',
+        'Learned new tricks and commands',
+        'Provided unlimited cuddles',
+        'Made the house feel complete'
       ],
-      story: 'The newest addition to the Murphy household, Willow has quickly become an indispensable part of the family with her sweet nature and playful spirit.',
+      story: 'The newest Murphy family member, Willow has filled our home with wagging tails, wet noses, and unconditional love.',
       quote: '*woof woof*'
     }
   ];
