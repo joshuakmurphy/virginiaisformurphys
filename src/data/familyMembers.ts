@@ -1,4 +1,6 @@
-export const familyMembers = [
+import { FamilyMember } from '../types';
+
+export const familyMembers: FamilyMember[] = [
   {
     id: 'josh',
     name: 'Josh',

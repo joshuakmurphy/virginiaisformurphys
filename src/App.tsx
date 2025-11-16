@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { FamilyMember } from './types';
 import Snowflake from './components/Snowflake';
 import HomePage from './components/HomePage';
 import ProfilePage from './components/ProfilePage';
@@ -6,11 +7,11 @@ import Footer from './components/Footer';
 import { familyMembers } from './data/familyMembers';
 import './App.css';
 
-const WinterWonderlandCard = () => {
-  const [currentPage, setCurrentPage] = useState('home');
-  const [selectedMember, setSelectedMember] = useState(null);
+const WinterWonderlandCard: React.FC = () => {
+  const [currentPage, setCurrentPage] = useState<'home' | 'profile'>('home');
+  const [selectedMember, setSelectedMember] = useState<FamilyMember | null>(null);
 
-  const viewMemberStory = (member) => {
+  const viewMemberStory = (member: FamilyMember) => {
     setSelectedMember(member);
     setCurrentPage('profile');
   };
@@ -62,12 +63,14 @@ const WinterWonderlandCard = () => {
             onMemberClick={viewMemberStory}
           />
         ) : (
-          <ProfilePage
-            member={selectedMember}
-            allMembers={familyMembers}
-            onBack={goHome}
-            onMemberClick={viewMemberStory}
-          />
+          selectedMember && (
+            <ProfilePage
+              member={selectedMember}
+              allMembers={familyMembers}
+              onBack={goHome}
+              onMemberClick={viewMemberStory}
+            />
+          )
         )}
 
         <Footer />
