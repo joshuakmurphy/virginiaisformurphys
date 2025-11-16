@@ -13,10 +13,11 @@ export const familyMembers: FamilyMember[] = [
       'Worked on exciting technology projects',
       'Continued learning and development',
       'Created memorable experiences with family',
-      'Focused on work-life balance and personal wellness'
+      'Focused on work-life balance and personal wellness',
     ],
-    story: 'A year of growth and balance, Josh has focused on being present for his family while pursuing meaningful work. Whether it\'s helping with homework or working on new projects, he\'s found joy in both the big moments and the everyday.',
-    quote: 'Making every moment count.'
+    story:
+      "A year of growth and balance, Josh has focused on being present for his family while pursuing meaningful work. Whether it's helping with homework or working on new projects, he's found joy in both the big moments and the everyday.",
+    quote: 'Making every moment count.',
   },
   {
     id: 'amy',
@@ -27,12 +28,13 @@ export const familyMembers: FamilyMember[] = [
     color: '#9B59B6',
     highlights: [
       'Organized wonderful family celebrations',
-      'Supported everyone through life\'s ups and downs',
+      "Supported everyone through life's ups and downs",
       'Created a warm and welcoming home',
-      'Balanced work and family with grace'
+      'Balanced work and family with grace',
     ],
-    story: 'The heart of the Murphy family, Amy has made 2025 a year filled with love, laughter, and togetherness. Her warmth and dedication make every day special.',
-    quote: 'Family is everything.'
+    story:
+      'The heart of the Murphy family, Amy has made 2025 a year filled with love, laughter, and togetherness. Her warmth and dedication make every day special.',
+    quote: 'Family is everything.',
   },
   {
     id: 'abby',
@@ -45,10 +47,11 @@ export const familyMembers: FamilyMember[] = [
       'Excelled in school and activities',
       'Developed new interests and hobbies',
       'Showed maturity and leadership',
-      'Made wonderful memories with friends'
+      'Made wonderful memories with friends',
     ],
-    story: 'At 15, Abby continues to impress with her dedication and kindness. This year brought new adventures, achievements, and growth.',
-    quote: 'Growing stronger every day.'
+    story:
+      'At 15, Abby continues to impress with her dedication and kindness. This year brought new adventures, achievements, and growth.',
+    quote: 'Growing stronger every day.',
   },
   {
     id: 'serena',
@@ -61,10 +64,11 @@ export const familyMembers: FamilyMember[] = [
       'Explored creativity through art and play',
       'Brought joy and laughter to every day',
       'Made new friends and discoveries',
-      'Showed kindness and imagination'
+      'Showed kindness and imagination',
     ],
-    story: 'Serena\'s creativity and energy make every day an adventure. Her imagination knows no bounds, and her smile lights up the room.',
-    quote: 'Always creating, always exploring.'
+    story:
+      "Serena's creativity and energy make every day an adventure. Her imagination knows no bounds, and her smile lights up the room.",
+    quote: 'Always creating, always exploring.',
   },
   {
     id: 'willow',
@@ -77,9 +81,10 @@ export const familyMembers: FamilyMember[] = [
       'Brought endless joy to the family',
       'Learned new tricks and commands',
       'Provided unlimited cuddles',
-      'Made the house feel complete'
+      'Made the house feel complete',
     ],
-    story: 'The newest Murphy family member, Willow has filled our home with wagging tails, wet noses, and unconditional love.',
-    quote: '*woof woof*'
-  }
+    story:
+      'The newest Murphy family member, Willow has filled our home with wagging tails, wet noses, and unconditional love.',
+    quote: '*woof woof*',
+  },
 ];

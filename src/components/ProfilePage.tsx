@@ -1,5 +1,13 @@
 import { FamilyMember } from '../types';
-import { COLORS, GRADIENTS, FONTS, RADIUS, SHADOWS, SPACING, getMemberGradient } from '../constants/theme';
+import {
+  COLORS,
+  GRADIENTS,
+  FONTS,
+  RADIUS,
+  SHADOWS,
+  SPACING,
+  getMemberGradient,
+} from '../constants/theme';
 
 interface ProfilePageProps {
   member: FamilyMember;
@@ -10,10 +18,12 @@ interface ProfilePageProps {
 
 const ProfilePage: React.FC<ProfilePageProps> = ({ member, allMembers, onBack, onMemberClick }) => {
   return (
-    <article style={{
-      padding: SPACING.lg,
-      minHeight: '100vh'
-    }}>
+    <article
+      style={{
+        padding: SPACING.lg,
+        minHeight: '100vh',
+      }}
+    >
       <button
         onClick={onBack}
         aria-label="Back to home page"
@@ -28,81 +38,99 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ member, allMembers, onBack, o
           marginBottom: SPACING.lg,
           display: 'flex',
           alignItems: 'center',
-          gap: SPACING.xs
+          gap: SPACING.xs,
         }}
       >
         ← Back to Home
       </button>
 
-      <header style={{
-        textAlign: 'center',
-        marginBottom: '50px'
-      }}>
-        <div aria-hidden="true" style={{
-          fontSize: FONTS.size['3xl'],
-          marginBottom: '15px',
-          opacity: '0.4'
-        }}>
+      <header
+        style={{
+          textAlign: 'center',
+          marginBottom: '50px',
+        }}
+      >
+        <div
+          aria-hidden="true"
+          style={{
+            fontSize: FONTS.size['3xl'],
+            marginBottom: '15px',
+            opacity: '0.4',
+          }}
+        >
           ❄️
         </div>
 
-        <div style={{
-          width: '160px',
-          height: '160px',
-          margin: '0 auto 25px',
-          borderRadius: '50%',
-          background: getMemberGradient(member.color),
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          fontSize: '80px',
-          boxShadow: `0 20px 50px ${member.color}40`,
-          border: `5px solid ${COLORS.white}`,
-          position: 'relative'
-        }}>
+        <div
+          style={{
+            width: '160px',
+            height: '160px',
+            margin: '0 auto 25px',
+            borderRadius: '50%',
+            background: getMemberGradient(member.color),
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: '80px',
+            boxShadow: `0 20px 50px ${member.color}40`,
+            border: `5px solid ${COLORS.white}`,
+            position: 'relative',
+          }}
+        >
           <span role="img" aria-label={member.emoji}>
             {member.emoji}
           </span>
-          <div aria-hidden="true" style={{
-            position: 'absolute',
-            top: '15px',
-            right: '15px',
-            fontSize: FONTS.size.xl,
-            animation: 'shimmer 2s infinite'
-          }}>
+          <div
+            aria-hidden="true"
+            style={{
+              position: 'absolute',
+              top: '15px',
+              right: '15px',
+              fontSize: FONTS.size.xl,
+              animation: 'shimmer 2s infinite',
+            }}
+          >
             ✨
           </div>
         </div>
 
-        <h2 style={{
-          fontSize: FONTS.size['5xl'],
-          fontWeight: FONTS.weight.semibold,
-          color: COLORS.textPrimary,
-          margin: '0 0 10px 0'
-        }}>
+        <h2
+          style={{
+            fontSize: FONTS.size['5xl'],
+            fontWeight: FONTS.weight.semibold,
+            color: COLORS.textPrimary,
+            margin: '0 0 10px 0',
+          }}
+        >
           {member.fullName}
         </h2>
-        <p style={{
-          fontSize: FONTS.size.base,
-          color: COLORS.textTertiary,
-          margin: '0'
-        }}>
+        <p
+          style={{
+            fontSize: FONTS.size.base,
+            color: COLORS.textTertiary,
+            margin: '0',
+          }}
+        >
           {member.title}
         </p>
       </header>
 
-      <div style={{
-        maxWidth: '700px',
-        margin: '0 auto'
-      }}>
-        <p style={{
-          fontSize: FONTS.size.base,
-          lineHeight: '1.8',
-          color: COLORS.textSecondary,
-          marginBottom: SPACING.lg,
-          textAlign: 'center',
-          fontWeight: FONTS.weight.light
-        }}>
+      <div
+        style={{
+          maxWidth: '700px',
+          margin: '0 auto',
+        }}
+      >
+        <p
+          style={{
+            fontSize: FONTS.size.base,
+            lineHeight: '1.8',
+            color: COLORS.textSecondary,
+            marginBottom: SPACING.lg,
+            textAlign: 'center',
+            fontWeight: FONTS.weight.light,
+          }}
+        >
           {member.story}
         </p>
 
@@ -113,7 +141,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ member, allMembers, onBack, o
             padding: '35px',
             borderRadius: RADIUS.sm,
             marginBottom: '35px',
-            border: '2px solid rgba(74, 144, 226, 0.1)'
+            border: '2px solid rgba(74, 144, 226, 0.1)',
           }}
         >
           <h4
@@ -125,78 +153,99 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ member, allMembers, onBack, o
               marginBottom: SPACING.md,
               display: 'flex',
               alignItems: 'center',
-              gap: SPACING.sm
+              gap: SPACING.sm,
             }}
           >
             <span aria-hidden="true">❄️</span>
             2025 Highlights
           </h4>
-          <ul style={{
-            listStyle: 'none',
-            padding: '0',
-            margin: '0'
-          }}>
+          <ul
+            style={{
+              listStyle: 'none',
+              padding: '0',
+              margin: '0',
+            }}
+          >
             {member.highlights.map((highlight, idx) => (
-              <li key={idx} style={{
-                fontSize: FONTS.size.sm,
-                lineHeight: '1.8',
-                color: COLORS.textSecondary,
-                marginBottom: '14px',
-                paddingLeft: '30px',
-                position: 'relative'
-              }}>
-                <span aria-hidden="true" style={{
-                  position: 'absolute',
-                  left: '0',
-                  color: member.color,
-                  fontSize: '20px'
-                }}>✦</span>
+              <li
+                key={idx}
+                style={{
+                  fontSize: FONTS.size.sm,
+                  lineHeight: '1.8',
+                  color: COLORS.textSecondary,
+                  marginBottom: '14px',
+                  paddingLeft: '30px',
+                  position: 'relative',
+                }}
+              >
+                <span
+                  aria-hidden="true"
+                  style={{
+                    position: 'absolute',
+                    left: '0',
+                    color: member.color,
+                    fontSize: '20px',
+                  }}
+                >
+                  ✦
+                </span>
                 {highlight}
               </li>
             ))}
           </ul>
         </section>
 
-        <blockquote style={{
-          background: GRADIENTS.quote,
-          padding: SPACING.lg,
-          borderRadius: RADIUS.sm,
-          textAlign: 'center',
-          marginBottom: '50px',
-          boxShadow: SHADOWS.quote,
-          margin: '0 0 50px 0'
-        }}>
-          <p style={{
-            fontSize: FONTS.size.xl,
-            fontStyle: 'italic',
-            color: COLORS.white,
-            margin: '0',
-            fontWeight: FONTS.weight.light
-          }}>
+        <blockquote
+          style={{
+            background: GRADIENTS.quote,
+            padding: SPACING.lg,
+            borderRadius: RADIUS.sm,
+            textAlign: 'center',
+            marginBottom: '50px',
+            boxShadow: SHADOWS.quote,
+            margin: '0 0 50px 0',
+          }}
+        >
+          <p
+            style={{
+              fontSize: FONTS.size.xl,
+              fontStyle: 'italic',
+              color: COLORS.white,
+              margin: '0',
+              fontWeight: FONTS.weight.light,
+            }}
+          >
             "{member.quote}"
           </p>
         </blockquote>
 
-        <nav aria-label="Other family member stories" style={{
-          textAlign: 'center'
-        }}>
-          <h4 style={{
-            fontSize: FONTS.size.md,
-            fontWeight: FONTS.weight.semibold,
-            color: COLORS.textPrimary,
-            marginBottom: '25px'
-          }}>
+        <nav
+          aria-label="Other family member stories"
+          style={{
+            textAlign: 'center',
+          }}
+        >
+          <h4
+            style={{
+              fontSize: FONTS.size.md,
+              fontWeight: FONTS.weight.semibold,
+              color: COLORS.textPrimary,
+              marginBottom: '25px',
+            }}
+          >
             Read more family stories
           </h4>
-          <div style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-            gap: '12px'
-          }}>
+          <div
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              justifyContent: 'center',
+              gap: '12px',
+            }}
+          >
             {allMembers
-              .filter(m => m.id !== member.id)
-              .map(otherMember => (
+              .filter((m) => m.id !== member.id)
+              .map((otherMember) => (
                 <button
                   key={otherMember.id}
                   onClick={() => onMemberClick(otherMember)}
