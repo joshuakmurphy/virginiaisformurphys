@@ -23,14 +23,16 @@ const WinterWonderlandCard: React.FC = () => {
   };
 
   return (
-    <div style={{
-      background: GRADIENTS.background,
-      minHeight: '100vh',
-      padding: '0',
-      fontFamily: FONTS.family,
-      position: 'relative',
-      overflow: 'hidden'
-    }}>
+    <div
+      style={{
+        background: GRADIENTS.background,
+        minHeight: '100vh',
+        padding: '0',
+        fontFamily: FONTS.family,
+        position: 'relative',
+        overflow: 'hidden',
+      }}
+    >
       <style>
         {`
           @keyframes fall {
@@ -52,17 +54,16 @@ const WinterWonderlandCard: React.FC = () => {
       <Snowflake size="22px" top="-60px" left="75%" delay={1.5} />
       <Snowflake size="16px" top="-45px" left="85%" delay={2.5} />
 
-      <div style={{
-        maxWidth: '1000px',
-        margin: '0 auto',
-        position: 'relative',
-        zIndex: 1
-      }}>
+      <div
+        style={{
+          maxWidth: '1000px',
+          margin: '0 auto',
+          position: 'relative',
+          zIndex: 1,
+        }}
+      >
         {currentPage === 'home' ? (
-          <HomePage
-            familyMembers={familyMembers}
-            onMemberClick={viewMemberStory}
-          />
+          <HomePage familyMembers={familyMembers} onMemberClick={viewMemberStory} />
         ) : (
           selectedMember && (
             <ProfilePage

@@ -31,11 +31,13 @@ export const GRADIENTS = {
   footer: 'linear-gradient(135deg, #2C5F7C 0%, #1E3A4F 100%)',
   nameTag: 'linear-gradient(135deg, rgba(74, 144, 226, 0.1) 0%, rgba(155, 89, 182, 0.1) 100%)',
   nameTagText: 'linear-gradient(135deg, #4A90E2 0%, #9B59B6 100%)',
-  highlightsBox: 'linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(155, 89, 182, 0.05) 100%)',
+  highlightsBox:
+    'linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(155, 89, 182, 0.05) 100%)',
 } as const;
 
 export const FONTS = {
-  family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+  family:
+    '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
 
   // Font sizes
   size: {
